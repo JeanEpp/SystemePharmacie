@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="SimpleInjector" Version="5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SystèmeGestionStationService.Infrastructure\SystèmePharmacie.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="InterfaceUtilisateur\AjoutMédecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\AjoutMédicamment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\AjoutPharmacie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\EcranPrincipale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\Médecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\Médicament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\Pharmacie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\Préscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\RechercherMédecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\RechercherMédicamment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\RechercherPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\RechercherPharmacie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\RechercherPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
